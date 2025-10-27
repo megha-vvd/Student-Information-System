@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Students - Student SIS</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Students</h1>
+    <nav>
+      <a href="index.html">Dashboard</a>
+      <a href="courses.html">Courses</a>
+      <a href="enrollments.html">Enrollments</a>
+      <a href="grades.html">Grades</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container">
+      <h2>Students</h2>
+      <form id="student-form">
+        <input type="hidden" id="student-id" value="">
+        <label>Name:<input type="text" id="name" required></label>
+        <label>Email:<input type="email" id="email" required></label>
+        <button type="submit" id="save-btn">Add Student</button>
+        <button type="button" id="cancel-btn" style="display:none">Cancel</button>
+      </form>
+
+      <table id="students-table">
+        <thead><tr><th>ID</th><th>Name</th><th>Email</th><th>Actions</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
